@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:font_awesome_flutter_named/font_awesome_flutter_named.dart';
 import 'package:json_dynamic_widget/json_dynamic_widget.dart';
 import 'package:json_dynamic_widget_plugin_font_awesome/json_dynamic_widget_plugin_font_awesome.dart';
 import 'package:logging/logging.dart';
@@ -30,6 +31,8 @@ void main() async {
   var data = JsonWidgetData.fromDynamic(
     json.decode(await rootBundle.loadString('assets/pages/font_awesome.json')),
   )!;
+
+  registry.setValue('icons', faIconNameMapping.keys);
 
   runApp(
     MaterialApp(
