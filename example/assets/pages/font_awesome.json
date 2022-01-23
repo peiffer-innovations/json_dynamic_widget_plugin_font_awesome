@@ -24,7 +24,7 @@
               "type": "fa_icon",
               "args": {
                 "color": "#fff",
-                "icon": "!{{value}}",
+                "icon": "${value}",
                 "size": 40.0
               }
             },
@@ -37,7 +37,7 @@
             {
               "type": "text",
               "args": {
-                "text": "!{{value}}",
+                "text": "${value}",
                 "style": {
                   "color": "#fff"
                 }
@@ -74,7 +74,7 @@
           },
           "padding": 16.0
         },
-        "children": "##for_each({{icons}}, template)##"
+        "children": "${for_each(icons, 'template')}"
       }
     }
   }
