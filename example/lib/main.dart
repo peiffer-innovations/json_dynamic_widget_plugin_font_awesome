@@ -20,14 +20,14 @@ void main() async {
     }
   });
 
-  var navigatorKey = GlobalKey<NavigatorState>();
+  final navigatorKey = GlobalKey<NavigatorState>();
 
-  var registry = JsonWidgetRegistry.instance;
+  final registry = JsonWidgetRegistry.instance;
   JsonFontAwesomePlugin.bind(registry);
 
   registry.navigatorKey = navigatorKey;
 
-  var data = JsonWidgetData.fromDynamic(
+  final data = JsonWidgetData.fromDynamic(
     json.decode(await rootBundle.loadString('assets/pages/font_awesome.json')),
   )!;
 

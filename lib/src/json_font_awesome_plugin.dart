@@ -4,7 +4,7 @@ import 'package:json_theme/json_theme_schemas.dart';
 
 class JsonFontAwesomePlugin {
   static void bind(JsonWidgetRegistry registry) {
-    var schemaCache = SchemaCache();
+    final schemaCache = SchemaCache();
     schemaCache.addSchema(
       FaIconSchema.id,
       FaIconSchema.schema,
@@ -12,7 +12,7 @@ class JsonFontAwesomePlugin {
 
     registry.registerCustomBuilder(
       JsonFaIconBuilder.type,
-      JsonWidgetBuilderContainer(
+      const JsonWidgetBuilderContainer(
         builder: JsonFaIconBuilder.fromDynamic,
         schemaId: FaIconSchema.id,
       ),
