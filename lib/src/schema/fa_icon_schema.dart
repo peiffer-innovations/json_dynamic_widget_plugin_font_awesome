@@ -7,6 +7,7 @@ class FaIconSchema {
   static final schema = {
     r'$schema': 'http://json-schema.org/draft-06/schema#',
     r'$id': '$id',
+    r'$children': 0,
     r'$comment':
         'https://pub.dev/documentation/font_awesome_flutter/latest/font_awesome_flutter/FaIcon-class.html',
     'type': 'object',
