@@ -20,8 +20,8 @@ const RESOURCES = {
 "assets/packages/font_awesome_flutter/lib/fonts/fa-brands-400.ttf": "b00363533ebe0bfdb95f3694d7647f6d",
 "assets/FontManifest.json": "3ddd9b2ab1c2ae162d46e3cc7b78ba88",
 "assets/NOTICES": "6629ad69eb61fccb26fe647e59b8d164",
-"index.html": "fcc610698852d0459c51ab77eb7f9bcc",
-"/": "fcc610698852d0459c51ab77eb7f9bcc",
+"index.html": "95fb9c2b537e3f6628dbcd058a1ab795",
+"/": "95fb9c2b537e3f6628dbcd058a1ab795",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1"
 };
