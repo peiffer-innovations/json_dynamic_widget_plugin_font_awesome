@@ -3,17 +3,17 @@ description: 'A plugin to the JSON Dynamic Widget to provide Font Awesome suppor
 homepage: 'https://github.com/peiffer-innovations/json_dynamic_widget_plugin_font_awesome'
 version: '3.0.1+13'
 
-environment: 
-  sdk: '>=2.19.0 <4.0.0'
+environment:
+  sdk: '>=3.0.0 <4.0.0'
 
-analyzer: 
-  exclude: 
+analyzer:
+  exclude:
     - 'lib/generated/**'
+    - 'lib/**/*.g.dart'
 
-
-dependencies: 
+dependencies:
   child_builder: '^2.0.1'
-  flutter: 
+  flutter:
     sdk: 'flutter'
   font_awesome_flutter: '^10.4.0'
   font_awesome_flutter_named: '^1.1.2+1'
@@ -21,18 +21,17 @@ dependencies:
   json_dynamic_widget: '^6.0.5+1'
   json_theme: '^5.0.2+6'
   logging: '^1.1.1'
-  meta: '^1.8.0'
+  meta: '^1.9.0'
   uuid: '^3.0.7'
 
-false_secrets: 
+false_secrets:
   - 'example/web/index.html'
 
-dev_dependencies: 
-  flutter_test: 
+dev_dependencies:
+  flutter_test:
     sdk: 'flutter'
 
-
-ignore_updates: 
+ignore_updates:
   - 'archive'
   - 'async'
   - 'boolean_selector'
