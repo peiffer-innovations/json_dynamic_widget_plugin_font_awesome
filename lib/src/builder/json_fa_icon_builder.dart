@@ -19,7 +19,7 @@ class JsonFaIconBuilder extends JsonWidgetBuilder {
   }) : super(numSupportedChildren: kNumSupportedChildren);
 
   static const kNumSupportedChildren = 0;
-  static const type = 'fa_icon';
+  static const kType = 'fa_icon';
 
   final Color? color;
   final IconData? icon;

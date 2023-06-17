@@ -11,7 +11,7 @@ class JsonFontAwesomePlugin {
     );
 
     registry.registerCustomBuilder(
-      JsonFaIconBuilder.type,
+      JsonFaIconBuilder.kType,
       const JsonWidgetBuilderContainer(
         builder: JsonFaIconBuilder.fromDynamic,
         schemaId: FaIconSchema.id,
