@@ -13,8 +13,9 @@ void main() {
 
     output.createSync(recursive: true);
 
-    final encoder = const JsonEncoder.withIndent('  ');
-    for (var schema in JsonDynamicWidgetPluginFontAwesomeSchemas.all.values) {
+    const encoder = JsonEncoder.withIndent('  ');
+    final registrar = JsonFontAwesomePluginRegistrar.registerDefaults();
+    for (var schema in registrar.schemas.values) {
       for (var i = 0; i < 3; i++) {
         try {
           final id = schema['\$id'].toString();

@@ -11,8 +11,11 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  font_awesome_flutter_named: '^1.1.2+1'
+  json_dynamic_widget: '^7.0.0+2'
   json_dynamic_widget_plugin_font_awesome:
     path: ../
+  logging: '^1.2.0'
 
 dev_dependencies:
   flutter_test:

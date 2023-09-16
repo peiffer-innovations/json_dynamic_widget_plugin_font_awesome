@@ -1,7 +1,5 @@
 import 'dart:convert';
 
-import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter_named/font_awesome_flutter_named.dart';
 import 'package:json_dynamic_widget/json_dynamic_widget.dart';
 import 'package:json_dynamic_widget_plugin_font_awesome/json_dynamic_widget_plugin_font_awesome.dart';
@@ -23,13 +21,13 @@ void main() async {
   final navigatorKey = GlobalKey<NavigatorState>();
 
   final registry = JsonWidgetRegistry.instance;
-  JsonFontAwesomePlugin.bind(registry);
+  JsonFontAwesomePluginRegistrar.registerDefaults(registry: registry);
 
   registry.navigatorKey = navigatorKey;
 
   final data = JsonWidgetData.fromDynamic(
     json.decode(await rootBundle.loadString('assets/pages/font_awesome.json')),
-  )!;
+  );
 
   registry.setValue('icons', faIconNameMapping.keys);
 
@@ -45,7 +43,7 @@ void main() async {
 }
 
 class ExampleWidgetPage extends StatelessWidget {
-  ExampleWidgetPage({
+  const ExampleWidgetPage({
     Key? key,
     required this.data,
   }) : super(key: key);
