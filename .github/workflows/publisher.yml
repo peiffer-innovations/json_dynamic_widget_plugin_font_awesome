@@ -25,6 +25,8 @@ jobs:
 
       - name: Validate
         uses: peiffer-innovations/actions-flutter-validate@v1
+        with:
+          generate_code: true
 
       - name: Checkout Schemas
         uses: actions/checkout@v4
