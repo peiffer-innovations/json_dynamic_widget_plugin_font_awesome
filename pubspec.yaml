@@ -1,7 +1,7 @@
 name: 'json_dynamic_widget_plugin_font_awesome'
 description: 'A plugin to the JSON Dynamic Widget to provide Font Awesome support to the widgets'
 homepage: 'https://github.com/peiffer-innovations/json_dynamic_widget_plugin_font_awesome'
-version: '4.0.0+23'
+version: '4.0.0+24'
 
 environment: 
   sdk: '>=3.0.0 <4.0.0'
@@ -22,7 +22,7 @@ dependencies:
   json_theme: '^6.5.0+1'
   logging: '^1.2.0'
   meta: '^1.12.0'
-  uuid: '^4.4.0'
+  uuid: '^4.4.2'
 
 false_secrets: 
   - 'example/web/index.html'
